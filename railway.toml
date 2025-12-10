@@ -1,5 +1,5 @@
 [build]
-builder = "NIXPACKS"
+builder = "dockerfile"
 
 [deploy]
-restartPolicyType = "ON_FAILURE"
+startCommand = "nginx -g 'daemon off;'"
